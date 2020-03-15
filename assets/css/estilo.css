@@ -1,0 +1,434 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&subset=cyrillic,cyrillic-ext,devanagari,greek,greek-ext,latin-ext,thai,vietnamese");
+@import url("https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i&subset=cyrillic,cyrillic-ext,devanagari,greek,greek-ext,latin-ext,thai,vietnamese");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=cyrillic,cyrillic-ext,devanagari,greek,greek-ext,latin-ext,thai,vietnamese");
+@import url("https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&subset=cyrillic,cyrillic-ext,devanagari,greek,greek-ext,latin-ext,thai,vietnamese");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&subset=cyrillic,cyrillic-ext,devanagari,greek,greek-ext,latin-ext,thai,vietnamese");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=cyrillic,cyrillic-ext,devanagari,greek,greek-ext,latin-ext,thai,vietnamese");
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&subset=cyrillic,cyrillic-ext,devanagari,greek,greek-ext,latin-ext,thai,vietnamese");
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=cyrillic,cyrillic-ext,devanagari,greek,greek-ext,latin-ext,thai,vietnamese");
+@import url("https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700&subset=cyrillic,cyrillic-ext,devanagari,greek,greek-ext,latin-ext,thai,vietnamese");
+@import url("https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=cyrillic,cyrillic-ext,devanagari,greek,greek-ext,latin-ext,thai,vietnamese");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&subset=cyrillic,cyrillic-ext,devanagari,greek,greek-ext,latin-ext,thai,vietnamese");
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:200,200i,300,300i,400,400i,600,600i,700,700i,900&subset=cyrillic,cyrillic-ext,devanagari,greek,greek-ext,latin-ext,thai,vietnamese");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&subset=cyrillic,cyrillic-ext,devanagari,greek,greek-ext,latin-ext,thai,vietnamese");
+@import url("https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700&subset=devanagari,latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Kanit:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=latin-ext,thai,vietnamese");
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&subset=latin-ext,vietnamese");
+/* ||| [ TODAS AS VARIÁVEIS QUE PODEM SER ULTILIZADAS NESSE ARQUIVO ] ||| */
+/* ||| CODE STYLE CSS = ( GLOBAL ) ||| */
+@font-face {
+  font-family: fnt_principal;
+  src: url("font/PenumbraSerifStd-Regular.otf") format("truetype"); }
+@viewport {
+  zoom: 1;
+  width: extend-to-zoom; }
+@media (max-width: 576px) {
+  .hideMobile {
+    display: none; } }
+@media (min-width: 576px) {
+  .hideMobile {
+    display: none; } }
+@media (min-width: 768px) {
+  .hideMobile {
+    display: none; } }
+@media (min-width: 992px) {
+  .hideMobile {
+    display: block; } }
+@media (min-width: 1200px) {
+  .hideMobile {
+    display: block; } }
+* {
+  -moz-box-sizing: border-box !important;
+  -webkit-box-sizing: border-box !important;
+  box-sizing: border-box !important;
+  margin: 0;
+  padding: 0; }
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%; }
+
+body {
+  margin: 0 auto;
+  color: #777 !important;
+  font-family: "Ubuntu", sans-serif !important;
+  background: url("https://hytale.com/static/images/backgrounds/content-upper-1920.jpg");
+  background-color: #10233f;
+  background-attachment: scroll;
+  background-size: 100% auto;
+  background-position: center 32px;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 7779; }
+  body.error {
+    background: #10233f; }
+
+ion-icon {
+  margin-bottom: -3px !important; }
+
+svg {
+  margin-bottom: -5px; }
+
+a {
+  text-decoration: none !important;
+  cursor: pointer; }
+
+button {
+  background: transparent;
+  border: none;
+  outline: 0;
+  cursor: pointer; }
+  button[disabled] {
+    cursor: not-allowed !important; }
+  button.btn-verde {
+    background: #3fcb2d !important; }
+  button.btn-azul {
+    background: #3369e7 !important;
+    background-image: linear-gradient(80deg, #00aeff, #3369e7) !important;
+    box-shadow: 0px 0px 5px 1px rgba(0, 130, 215, 0.4) !important; }
+  button.btn-vermelho {
+    background: #ee2c2c !important; }
+  button.info {
+    padding: 0.35rem 0.375rem !important;
+    font-size: 66% !important;
+    font-weight: 600 !important;
+    text-transform: uppercase;
+    line-height: 1;
+    text-align: center;
+    vertical-align: baseline;
+    white-space: nowrap;
+    border-radius: 0.25rem;
+    display: inline-block; }
+    button.info.i-verde {
+      color: #1aae6f !important;
+      background-color: rgba(147, 231, 195, 0.5) !important; }
+    button.info.i-azul {
+      margin-left: 5px;
+      color: #2643e9 !important;
+      background-color: rgba(203, 210, 246, 0.5) !important; }
+    button.info.i-vermelho {
+      color: #f80031 !important;
+      background-color: rgba(251, 175, 190, 0.5) !important; }
+
+.boxshadow {
+  box-shadow: 0 0 35px rgba(50, 50, 93, 0.08), 0 0 15px rgba(0, 0, 0, 0.3) !important; }
+
+.bshadow {
+  -webkit-box-shadow: 0px -3px 12px -6px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px -3px 12px -6px rgba(0, 0, 0, 0.5);
+  box-shadow: 3px -3px 12px -6px rgba(0, 0, 0, 0.5); }
+
+.shadow-box {
+  -webkit-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1); }
+
+.sbshadow {
+  box-shadow: 0px 5px 0 0px rgba(222, 222, 248, 0.5), 0 5px 25px 0 rgba(222, 222, 248, 0.9); }
+
+.bvshadow {
+  box-shadow: 0 1px 1.5rem rgba(18, 38, 63, 0.03); }
+
+.slershadow {
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.8);
+  transition: all 0.5s ease-in-out; }
+
+.slershadow:hover {
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.6); }
+
+/* ||| CODE STYLE CSS = ( CONTAINERS - GERAIS ) ||| */
+.ctn-global {
+  width: 100%;
+  position: relative; }
+  .ctn-global .content_all {
+    width: 1180px;
+    margin: 0 auto; }
+  .ctn-global .listagemRow {
+    height: 100%;
+    display: flex;
+    flex-direction: row; }
+    .ctn-global .listagemRow .col-md-8 {
+      padding-left: 0; }
+    .ctn-global .listagemRow .col-md-4 {
+      padding-right: 0; }
+
+menu {
+  width: 100%;
+  font-family: "fnt_principal", sans-serif !important; }
+  menu .suber {
+    width: 100%;
+    padding: 15px;
+    background: #05172a;
+    border-bottom: 1px solid #ffaa00; }
+    menu .suber ul {
+      width: 1180px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      margin: 0 auto; }
+      menu .suber ul button.twitter {
+        color: #ffaa00;
+        font-size: 10px;
+        display: block; }
+        menu .suber ul button.twitter ion-icon {
+          margin-top: 0 !important;
+          margin-bottom: -1px !important; }
+  menu .hunter {
+    width: 1180px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row; }
+    menu .hunter button.logo {
+      width: 100px;
+      margin: 0 auto;
+      margin-right: 20px;
+      margin-top: -10px;
+      display: block; }
+      menu .hunter button.logo img {
+        width: 100%; }
+    menu .hunter .botoes {
+      width: 100%;
+      height: 48px;
+      margin-top: 10px;
+      background: #05172a;
+      border: 1px solid rgba(203, 210, 246, 0.5);
+      border-radius: 5px;
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+      menu .hunter .botoes ul {
+        width: 100%;
+        margin: 0 auto;
+        padding: 12px;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center; }
+        menu .hunter .botoes ul li {
+          display: block;
+          border-right: 1px solid rgba(203, 210, 246, 0.5); }
+          menu .hunter .botoes ul li:last-child {
+            border-right: none; }
+          menu .hunter .botoes ul li.ativo button {
+            color: #ffaa00;
+            background: radial-gradient(ellipse at center, rgba(237, 181, 72, 0.1) 0%, rgba(237, 181, 72, 0.1) 20%, rgba(237, 181, 72, 0) 70%, rgba(237, 181, 72, 0) 100%);
+            text-shadow: 0 2px 2px #ffaa00; }
+            menu .hunter .botoes ul li.ativo button:hover {
+              color: #ffaa00; }
+          menu .hunter .botoes ul li button {
+            margin: 0 10px;
+            line-height: 20px;
+            color: #a5b9c6;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            display: block;
+            transition: all .3s ease-in-out; }
+            menu .hunter .botoes ul li button ion-icon {
+              font-size: 20px; }
+            menu .hunter .botoes ul li button:hover {
+              color: #fff;
+              background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 0) 100%); }
+
+/* ||| CODE STYLE CSS = ( FOOTER ) ||| */
+footer {
+  width: 100%;
+  font-family: "fnt_principal", sans-serif !important;
+  background: url("https://hytale.com/static/images/backgrounds/content-lower-1920.jpg");
+  background-position: bottom center;
+  background-size: cover;
+  border-top: 1px solid #ffaa00;
+  z-index: 2; }
+  footer .brand {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 0;
+    font-size: 1em;
+    color: rgba(183, 206, 221, 0.3);
+    text-align: center; }
+    footer .brand strong {
+      color: #ffaa00; }
+
+.backer-all {
+  width: 100% !important;
+  padding: 50px 0;
+  background: url("https://hytale.com/static/images/backgrounds/content-lower-1920.jpg");
+  background-position: top center;
+  background-size: cover;
+  border-top: 1px solid #ffaa00; }
+  .backer-all .contenter {
+    width: 1180px;
+    margin: 0 auto;
+    position: relative; }
+
+.ctn-all {
+  width: 100%;
+  font-family: "fnt_principal", sans-serif !important; }
+  .ctn-all .hunters {
+    margin: 30px 0; }
+    .ctn-all .hunters button.logo {
+      display: block;
+      margin: 0 auto; }
+    .ctn-all .hunters .ctaContainer {
+      position: relative;
+      height: 80px;
+      background: url("https://hytale.com/static/images/cta-container.png") 50% 50% no-repeat;
+      background-size: auto 100%; }
+      .ctn-all .hunters .ctaContainer button {
+        width: 260px;
+        min-width: auto;
+        margin: 0;
+        padding: 15px;
+        color: #fff;
+        font-weight: bold;
+        background: #ffaa00;
+        border-radius: 3px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+
+/* ESSE É O SCROLL, SEM COR, SÓ COM A LARGURA */
+::-webkit-scrollbar {
+  width: 3.5px;
+  height: 0;
+  background-color: #05172a;
+  overflow: visible; }
+
+/* ESSE É O SCROLL NORMAL, PODE SER DEFINIDO A COR, BORDAR, ETC */
+::-webkit-scrollbar-thumb {
+  padding: 0;
+  background: #ffaa00;
+  border-width: 1px 1px 1px 6px; }
+  ::-webkit-scrollbar-thumb:active, ::-webkit-scrollbar-thumb:hover {
+    background: #ffaa00; }
+
+::-webkit-scrollbar-button {
+  height: 0;
+  width: 0; }
+
+::-webkit-scrollbar-track {
+  background-clip: padding-box;
+  border: solid transparent;
+  border-width: 0 0 0 4px; }
+
+.title-forme {
+  width: 100%;
+  margin: 30px 0 50px 0;
+  color: #d29f32;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "fnt_principal", sans-serif !important;
+  text-align: center; }
+
+button .ctn-noticia {
+  width: 100%;
+  height: 140px;
+  min-height: 130px;
+  padding: 0 10px;
+  position: relative;
+  transition: all .5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  button .ctn-noticia:hover {
+    background: rgba(0, 0, 0, 0.3); }
+  button .ctn-noticia::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    margin: 10px 0;
+    background: #36455c;
+    position: absolute;
+    bottom: -20px;
+    right: -10px; }
+  button .ctn-noticia:first-child::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    margin: 10px 0;
+    background: #36455c;
+    position: absolute;
+    top: -20px;
+    right: -10px; }
+  button .ctn-noticia .banner {
+    width: 100%;
+    height: 120px;
+    border: 1px solid #b7cedd;
+    transition: all .3s ease-in-out; }
+    button .ctn-noticia .banner:hover {
+      border-color: #d29f32; }
+    button .ctn-noticia .banner img {
+      width: 100%;
+      height: 100%; }
+  button .ctn-noticia .infos {
+    width: 100%;
+    margin-left: 0; }
+    button .ctn-noticia .infos .titulo {
+      margin-bottom: 10px;
+      color: #d29f32;
+      font-size: 18px;
+      font-weight: 500;
+      text-transform: uppercase;
+      text-align: left; }
+    button .ctn-noticia .infos .descricao {
+      margin-left: 10px;
+      color: #b7cedd;
+      font-size: 13.5px;
+      text-align: left; }
+    button .ctn-noticia .infos .footer {
+      color: #b7cedd;
+      text-align: left;
+      position: absolute;
+      bottom: 5px;
+      left: 15px;
+      right: 15px; }
+      button .ctn-noticia .infos .footer .autor {
+        float: right; }
+
+.cardLateral {
+  width: 100%; }
+  .cardLateral button {
+    width: 100%;
+    padding: 15px 20px;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 5px; }
+    .cardLateral button.twitter {
+      background: #00acee; }
+    .cardLateral button.discord {
+      background: #7289DA; }
+
+.ctn-erro {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .ctn-erro .logo {
+    width: 300px;
+    margin-bottom: 50px; }
+    .ctn-erro .logo img {
+      width: 100%; }
+  .ctn-erro .card {
+    width: 500px;
+    font-size: 20px;
+    text-align: center; }
+    .ctn-erro .card button {
+      color: #d29f32; }
+    .ctn-erro .card p {
+      text-align: left; }
+      .ctn-erro .card p em {
+        margin-left: -10px;
+        margin-bottom: 5px;
+        font-style: normal;
+        font-weight: bold;
+        display: block; }
+
+/*# sourceMappingURL=estilo.css.map */

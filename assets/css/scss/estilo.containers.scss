@@ -1,0 +1,182 @@
+.title-forme {
+    width: 100%;
+    margin: 30px 0 50px 0;
+    color: #d29f32;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "fnt_principal", sans-serif !important;
+    text-align: center;
+}
+
+button {
+
+    .ctn-noticia {
+        width: 100%;
+        height: 140px;
+        min-height: 130px;
+        padding: 0 10px;
+        position: relative;
+        transition: all .5s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            background: rgba(0,0,0,0.3);
+        }
+
+        &::after {
+            content: "";
+            width: 100%;
+            height: 1px;
+            margin: 10px 0;
+            background: #36455c;
+            position: absolute;
+            bottom: -20px;
+            right: -10px;
+        }
+
+        &:first-child {
+            &::before {
+                content: "";
+                width: 100%;
+                height: 1px;
+                margin: 10px 0;
+                background: #36455c;
+                position: absolute;
+                top: -20px;
+                right: -10px;
+            }
+        }
+
+        .banner {
+            width: 100%;
+            height: 120px;
+            border: 1px solid #b7cedd;
+            transition: all .3s ease-in-out;
+
+            &:hover {
+                border-color: #d29f32;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .infos {
+            width: 100%;
+            margin-left: 0;
+
+            .titulo {
+                margin-bottom: 10px;
+                color: #d29f32;
+                font-size: 18px;
+                font-weight: 500;
+                text-transform: uppercase;
+                text-align: left;
+            }
+
+            .descricao {
+                margin-left: 10px;
+                color: #b7cedd;
+                font-size: 13.5px;
+                text-align: left;
+            }
+
+            .footer {
+                color: #b7cedd;
+                text-align: left;
+                position: absolute;
+                bottom: 5px;
+                left: 15px;
+                right: 15px;
+
+                .autor {
+                    float: right;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+.cardLateral {
+    width: 100%;
+
+    button {
+        width: 100%;
+        padding: 15px 20px;
+        color: #fff;
+        font-weight: 500;
+        border-radius: 5px;
+
+        &.twitter {
+            background: #00acee;
+        }
+
+        &.discord {
+            background: #7289DA;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ctn-erro {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .logo {
+        width: 300px;
+        margin-bottom: 50px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .card {
+        width: 500px;
+        font-size: 20px;
+        text-align: center;
+
+        button {
+            color: #d29f32;
+        }
+
+        p {
+            text-align: left;
+            em {
+                margin-left: -10px;
+                margin-bottom: 5px;
+                font-style: normal;
+                font-weight: bold;
+                display: block;
+            }
+        }
+    }
+}
